@@ -26,7 +26,7 @@ function forward() {
   video.currentTime += skipInterval;
 }
 
-function backward(  ) {
+function backward() {
   video.currentTime -= backInterval;
 }    
 
@@ -58,7 +58,7 @@ volumeRange.oninput = function(){
   }
 }
 
-//---------------------end volume ----------------------------------------------
+//---------------------end volume --------------------------------------------------------
 
 //-----------------------------playbackspeed----------------------------------------------
 function ChangeSpeed(){

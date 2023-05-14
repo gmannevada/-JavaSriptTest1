@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Voiceinator 5000</title>
+    <link rel="stylesheet" href="./question3.css/">
+</head>
+<body>
+    <div class="container">
+        <div class="textToSpeech">
+            <div id="yellowSpanDiv">
+                <span class="yellow"> The Voiceinator 5000</span>
+            </div>
+
+            <div>
+                <select name="voice" id="voicesSelect">                    
+                </select>
+            </div>
+            <div>
+                <label for="rateRange">Rate:</label>
+                <input type="range" min="0" max="100" value="10" class="slider" id="rateRange" name="rateRange">
+            </div>
+            <div>
+                <label for="pitchRange">Pitch:</label>
+                <input type="range" min="0" max="100" value="10" class="slider" id="pitchRange" name="pitchRange">    
+            </div>
+            
+            <div>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </div>
+            
+            <div>
+                <button class="yellow" id="speak" onclick="PlayOrStop()">Speak</button>                        
+                <button class="yellow" id="stop" onclick="PlayOrStop()">Stop!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./speech.js"></script>
+    <script src="./question3.js"></script>
+</body>
+</html>
