@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./question2.css">
+    <title>Question 2</title>
+</head>
+<body>
+    <div id="container">
+         <div id="video">
+           <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+                <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+            </video>
+         </div>
+         <div class="contentBottom">
+            <button id="playerbuttton" onclick="PlayOrPauseVideo()">||</button>
+            <button id="backward" onclick="backward()"><<</button>
+            <button id="forward" onclick="forward()">>></button>            
+            <progress id="videoProgress" value="0" max="100"></progress>
+            <span id="currentTime">00:00</span>  
+            <div class="volume">                
+                <input type="range" min="0" max="100" value="10" class="slider" id="volumeRange">
+            </div>  
+            <select id="playbackSpeed">
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option value="1" selected>1</option>
+                <option value="1.5">1.5</option>
+                <option value="1.75">1.75</option>
+                <option value="2">2</option>
+            </select>          
+         </div>         
+    </div>
+
+    <script src="./question2.js"></script>
+</body>
+</html>
