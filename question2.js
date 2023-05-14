@@ -61,10 +61,10 @@ volumeRange.oninput = function(){
 //---------------------end volume ----------------------------------------------
 
 //-----------------------------playbackspeed----------------------------------------------
-playbackspeed = document.getElementById("playbackspeed");
-playbackspeed.oninput = function(){
-  video.playbackRate = playbackspeed.value;
+function ChangeSpeed(){
+  pbSpeed = document.getElementById("playbackspeed");
+  video.playbackRate = pbSpeed.value;  
+  alert(" The playback speed is now: " + pbSpeed.value + "x");
 }
-
 //0.25,  0.5, 0.75, Normal, 1.25, 1.5, 1.75, 2
 //---------------------end playbackspeed ----------------------------------------------
